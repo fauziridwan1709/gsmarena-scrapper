@@ -5,7 +5,7 @@ ControlSocketsGroupWritable 1
 CookieAuthentication 1
 CookieAuthFile /etc/tor/run/control.authcookie
 CookieAuthFileGroupReadable 1
-DNSPort 5353
+DNSPort 53
 DataDirectory /var/lib/tor
 ExitPolicy reject *:*
 Log notice stderr

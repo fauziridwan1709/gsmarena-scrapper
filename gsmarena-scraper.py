@@ -26,7 +26,7 @@ class tor_network:
             try:
                 self.ntries += 1
                 soup = BeautifulSoup(
-                    self.session.get(url).content, features="lxml"
+                    self.session.get(url, headers = {'User-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}).content, features="lxml"
                 )
                 if soup.find("title").text.lower() == "too many requests":
                     logger.info(f"Too many requests.")

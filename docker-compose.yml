@@ -10,6 +10,7 @@ services:
     volumes:
         - ./torrc:/etc/tor/torrc:ro
     ports:
+      - 9000:9000
       - 8118:8118
       - 9050:9050
       - 9051:9051
